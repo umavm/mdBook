@@ -52,3 +52,24 @@ cargo install mdbook
 ```c
 cargo -V
 ```
+### From Git
+
+The version published to crates.io will ever so slightly be behind the version hosted here on GitHub. If you need the latest version you can build the git version of mdBook yourself. Cargo makes this super easy!
+
+```c
+cargo install --git https://github.com/rust-lang/mdBook.git mdbook
+```
+Again, make sure to add the Cargo bin directory to your PATH.
+
+### For Contributions
+
+If you want to contribute to mdBook you will have to clone the repository on your local machine:
+```c
+git clone https://github.com/rust-lang/mdBook.git
+```
+cd into mdBook/ and run
+
+```c
+cargo build
+```
+The resulting binary can be found in mdBook/target/debug/ under the name mdBook or mdBook.exe.
