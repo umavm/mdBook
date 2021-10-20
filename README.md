@@ -12,19 +12,19 @@ mdBook includes built in support for both preprocessing your Markdown and altern
 ### Linux/MacOS
 If you’re using Linux or macOS, open a terminal and enter the following command
 1. Install Rustup and cargo by running this command in the terminal.(Note: You may need to reopen the terminal after this command executes.)
-```c
+```
  $ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
  ```
  2. Install the mdbook CLI from cargo
-```c
+```
  cargo install mdbook
 ```
 3. Check version of mdbook installed to verify the installation was successful
-```c
+```
  cargo -V
 ```
 On macOS, you can get a C compiler by running:
-```c
+```
 $ xcode-select --install
 ```
 
@@ -37,26 +37,26 @@ $ xcode-select --install
 
 a. GNU C Compiler:
 Install it using the following commands
-```c
+```
  rustup toolchain install stable-x86_64-pc-windows-gnu rustup default stable-x86_64-pc-windows-gnu
 ```
 b. Visual Studio C++ Build Tools: Install C++ Build tools from this link
-```c
+```
  https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019
 ```
 3.Install the mdbook CLI from cargo
-```c
+```
  cargo install mdbook
 ```
 4. Check version of mdbook installed to verify the installation is successful
-```c
+```
  cargo -V
 ```
 ### From Git
 
 The version published to crates.io will ever so slightly be behind the version hosted here on GitHub. If you need the latest version you can build the git version of mdBook yourself. Cargo makes this super easy!
 
-```c
+```
  cargo install --git https://github.com/rust-lang/mdBook.git mdbook
 ```
 Again, make sure to add the Cargo bin directory to your PATH.
@@ -64,12 +64,12 @@ Again, make sure to add the Cargo bin directory to your PATH.
 ### For Contributions
 
 If you want to contribute to mdBook you will have to clone the repository on your local machine:
-```c
+```
  git clone https://github.com/rust-lang/mdBook.git
 ```
 cd into mdBook/ and run
 
-```c
+```
  cargo build
 ```
 The resulting binary can be found in mdBook/target/debug/ under the name mdBook or mdBook.exe.
